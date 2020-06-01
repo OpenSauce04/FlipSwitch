@@ -1,7 +1,9 @@
 void setup() {
   size(window.innerWidth, window.innerHeight, P2D);
-  frameRate(1000)
+  background(255);
 }
 void draw() {
-  line(mouseX, mouseY, pmouseX, pmouseY);
+  line(cursorXP1, cursorYP1, cursorX, cursorY);
+  line(cursorXP2, cursorYP2, cursorXP1, cursorYP1);
+  line(cursorXP3, cursorYP3, cursorXP2, cursorYP2);
 }
