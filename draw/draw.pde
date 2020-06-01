@@ -14,5 +14,8 @@ void draw() {
   userFrame[cf].line(cursorXP2/4, cursorYP2/4, cursorXP1/4, cursorYP1/4);
   userFrame[cf].line(cursorXP3/4, cursorYP3/4, cursorXP2/4, cursorYP2/4);
   userFrame[cf].endDraw();
-  image(userFrame[0],0,0,width,height);
+  pushMatrix();
+  scale(4);
+  image(userFrame[0],0,0);
+  popMatrix();
 }
