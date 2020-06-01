@@ -2,7 +2,6 @@ PGraphics[] userFrame = new PGraphics[400];
 void setup() {
   size(window.innerWidth, window.innerHeight, P2D);
   background(255);
-  strokeWeight(7);
   cf=0; // Current frame
 }
 void draw() {
