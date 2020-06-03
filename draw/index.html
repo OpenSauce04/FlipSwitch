@@ -5,10 +5,6 @@
 var cursorX, cursorY, cursorXP1, cursorYP1, cursorXP2, cursorYP2, cursorXP3, cursorYP3;
 
 addEventListener('touchmove', function(e) {
-  cursorXP3 = cursorXP2;
-  cursorYP3 = cursorYP2;
-  cursorXP2 = cursorXP1;
-  cursorYP2 = cursorYP1;
   cursorXP1 = cursorX;
   cursorYP1 = cursorY;
   cursorX = e.touches[0].clientX;
@@ -18,10 +14,6 @@ addEventListener('touchmove', function(e) {
 addEventListener('touchstart', function(e) {
   cursorX = e.touches[0].clientX;
   cursorY = e.touches[0].clientY;
-  cursorXP3 = cursorX;
-  cursorYP3 = cursorY;
-  cursorXP2 = cursorX;
-  cursorYP2 = cursorY;
   cursorXP1 = cursorX;
   cursorYP1 = cursorY;
 }, false);

@@ -17,8 +17,6 @@ void draw() {
   userFrame[cf].pushMatrix();
   userFrame[cf].translate(-canvasoffset/scalefactor,0);
   userFrame[cf].line(cursorXP1/scalefactor, cursorYP1/scalefactor, cursorX/scalefactor, cursorY/scalefactor);
-  userFrame[cf].line(cursorXP2/scalefactor, cursorYP2/scalefactor, cursorXP1/scalefactor, cursorYP1/scalefactor);
-  userFrame[cf].line(cursorXP3/scalefactor, cursorYP3/scalefactor, cursorXP2/scalefactor, cursorYP2/scalefactor);
   userFrame[cf].popMatrix();
   userFrame[cf].endDraw();
   pushMatrix();
