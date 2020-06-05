@@ -1,22 +1,3 @@
 <link rel="stylesheet" type="text/css" href="../style.css">
-<script src="../resources/lib/processing.min.js"></script>
-<script>
-
-var cursorX, cursorY, cursorXP1, cursorYP1, cursorXP2, cursorYP2, cursorXP3, cursorYP3;
-
-addEventListener('touchmove', function(e) {
-  cursorXP1 = cursorX;
-  cursorYP1 = cursorY;
-  cursorX = e.touches[0].clientX;
-  cursorY = e.touches[0].clientY;
-}, false);
-
-addEventListener('touchstart', function(e) {
-  cursorX = e.touches[0].clientX;
-  cursorY = e.touches[0].clientY;
-  cursorXP1 = cursorX;
-  cursorYP1 = cursorY;
-}, false);
-
-</script>
-<canvas data-processing-sources="draw.pde"></canvas>
+<script src="../resources/lib/p5.min.js"></script>
+<script src="main.js"></script>
