@@ -1,24 +1,5 @@
 <link rel="stylesheet" type="text/css" href="../style.css">
 <script src="../resources/lib/p5.min.js"></script>
 
-<script>
-
-  var touchX, touchY, ptouchX, ptouchY;
-  
-  addEventListener('touchmove', function(e) {
-    ptouchX = touchX;
-    ptouchY = touchY;
-    touchX = e.touches[0].clientX;
-    touchY = e.touches[0].clientY;
-  }, false);
-  
-  addEventListener('touchstart', function(e) {
-    touchX = e.touches[0].clientX;
-    touchY = e.touches[0].clientY;
-    ptouchX = touchX;
-    ptouchY = touchY;
-  }, false);
-  
-  </script>
-
+<script src="touch.js"></script>
 <script src="main.js"></script>
