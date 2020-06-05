@@ -14,7 +14,9 @@ function draw() {
   }
   userFrame[cf].push();
   userFrame[cf].translate(-canvasoffset/scalefactor,0);
-  userFrame[cf].line(pmouseX/scalefactor, pmouseY/scalefactor, mouseX/scalefactor, mouseY/scalefactor);
+  for(let x=0;x<100;x++) {
+    userFrame[cf].line(pmouseX/scalefactor, pmouseY/scalefactor, mouseX/scalefactor, mouseY/scalefactor);
+  }
   userFrame[cf].pop();
   push();
   scale(scalefactor);
