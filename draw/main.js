@@ -1,11 +1,12 @@
 var userFrame = [];
-var scalefactor=window.innerHeight/192;
-var canvasoffset=window.innerWidth/2-(256*scalefactor)/2;
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight, P2D);
+  createCanvas(WIDTH, HEIGHT, P2D);
   background(203, 78, 1);
   cf=0; // Current frame
-  noSmooth();
+  ellipseMode(CORNER);
+  textAlign(CENTER);
+  buttonsInit();
+  buttonsDraw();
 }
 function draw() {
   if (userFrame[cf]==undefined) {
@@ -20,7 +21,7 @@ function draw() {
   userFrame[cf].pop();
   push();
   scale(scalefactor);
-  background(203, 78, 1);
-  image(userFrame[0],canvasoffset/scalefactor,0);
+  image(userFrame[cf],canvasoffset/scalefactor,0);
   pop();
+  strokeWeight(5);
 }
