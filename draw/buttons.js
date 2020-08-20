@@ -27,8 +27,10 @@ function buttonsInit() {
   button_prevFrame = new button("←", 50, 25, 25, canvasoffset - 50, canvasoffset - 50);
   button_nextFrame = new button("→", 50, WIDTH - canvasoffset + 25, 25, canvasoffset - 50, canvasoffset - 50);
   
-  button_prevFrame.buttonFunction = function() {
-    cf--;
+  button_prevFrame.buttonFunction = function () {
+    if (cf > 0) {
+      cf--;
+    }
   };
   button_nextFrame.buttonFunction = function () {
     cf++;
